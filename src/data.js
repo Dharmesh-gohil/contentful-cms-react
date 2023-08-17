@@ -20,3 +20,14 @@ const projects = [
     image: './assets/questions.png',
   },
 ];
+// https://reviews-inreact.netlify.app/
+// https://menu-inreactproject.netlify.app/
+// https://color-generater-inreact.netlify.app/
+// https://cart-project-inreact.netlify.app/
+// https://reminder-birth.netlify.app/
+// https://accordino-react.netlify.app/
+// https://react-query-project.netlify.app/
+// https://grocerybud-inreact-project.netlify.app/
+// https://loreamipsum-inreact-project.netlify.app/
+// https://slider-inreact-project.netlify.app/
+// https://sidebar-inreact-project.netlify.app/

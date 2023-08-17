@@ -42,9 +42,9 @@ Setup content type and create few entries
 #### Explore API
 
 Get Space ID, Access Token and explore code examples.
-
-Space ID -
-Access Token -
+content_type:-projects
+Space ID -qvgpyzf81jt0
+Access Token -qtdtBvJW-p9gLUpujAXm2CQ7dis-gE7JPj5YOxoJxsk
 
 #### Install SDK
 
