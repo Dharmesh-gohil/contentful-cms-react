@@ -2,8 +2,10 @@ import { createClient } from 'contentful';
 import { useEffect, useState } from 'react';
 
 const client = createClient({
+    // space:import.meta.env.VITE_SPACE_KEY,
     space: "qvgpyzf81jt0",
     environment: "master",
+    // accessToken:import.meta.env.VITE_API_KEY
     accessToken:"qtdtBvJW-p9gLUpujAXm2CQ7dis-gE7JPj5YOxoJxsk",
 })
 client.getEntries({ content_type: "projects" })
