@@ -3,14 +3,14 @@ import { useEffect, useState } from 'react';
 
 const client = createClient({
     //why i m not able to add access token and space using env file
-    // space:import.meta.env.VITE_SPACE_KEY,
-    // accessToken:import.meta.env.VITE_API_KEY
-    space: "qvgpyzf81jt0",
-    environment: "master",
-    accessToken:"qtdtBvJW-p9gLUpujAXm2CQ7dis-gE7JPj5YOxoJxsk",
+    space:import.meta.env.VITE_SPACE_KEY,
+    environment: 'master',
+    accessToken:import.meta.env.VITE_API_KEY,
+    // space: 'qvgpyzf81jt0',
+    // accessToken:'qtdtBvJW-p9gLUpujAXm2CQ7dis-gE7JPj5YOxoJxsk',
 })
-client.getEntries({ content_type: "projects" })
-    .then((response) => console.log(response))
+// client.getEntries({ content_type: "projects" })
+//     .then((response) => console.log(response))
 
 export const useFetchProjects = () => { 
     const [loading, setLoading] = useState(true)
@@ -18,8 +18,9 @@ export const useFetchProjects = () => {
     
     const getData = async () => { 
         try {
-            const response = await client.getEntries({content_type:"projects"})
-            // console.log(response)
+            const response = await client.getEntries({ content_type: "projects" })
+            //below  line code i cant see in console  
+            console.log(response)
             const projects = response.items.map((item) => { 
                 const { image, title, url } = item.fields
                 const img=image?.fields?.file?.url
